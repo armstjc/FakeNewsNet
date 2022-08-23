@@ -60,7 +60,7 @@ class DataCollector:
                 maxInt = int(maxInt / 10)
 
         news_list = []
-        with open('{}/{}_{}.csv'.format(self.config.dataset_dir, data_choice["news_source"],
+        with open('{}/{}_{}.csv'.format("dataset", data_choice["news_source"],
                                         data_choice["label"]), encoding="UTF-8") as csvfile:
             reader = csv.DictReader(csvfile)
             for news in reader:
